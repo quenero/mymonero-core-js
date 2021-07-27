@@ -27,8 +27,8 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 "use strict";
-const mymonero = require("../");
-const monero_config = require('../monero_utils/monero_config') 
+const myqueenero = require("../");
+const queenero_config = require('../queenero_utils/queenero_config') 
 const assert = require('assert')
 
 describe("sendingFunds tests", function()
@@ -40,17 +40,17 @@ describe("sendingFunds tests", function()
 		{
 			unlock_time: blockchain_height + 5,
 		}
-		const reason = mymonero.monero_txParsing_utils.TransactionLockedReason(tx, blockchain_height)
+		const reason = myqueenero.queenero_txParsing_utils.TransactionLockedReason(tx, blockchain_height)
 		assert.equal(0, reason.indexOf("Will be unlocked in 5 blocks, ~5 minutes, Today at"))
 	});
 	it("can tell locked reason -- timestamp", function()
 	{
-		const blockchain_height = mymonero.monero_config.maxBlockNumber
+		const blockchain_height = myqueenero.queenero_config.maxBlockNumber
 		const tx = 
 		{
 			unlock_time: blockchain_height * 10000,
 		}
-		const reason = mymonero.monero_txParsing_utils.TransactionLockedReason(tx, blockchain_height)
+		const reason = myqueenero.queenero_txParsing_utils.TransactionLockedReason(tx, blockchain_height)
 		assert.equal(0, reason.indexOf("Will be unlocked in"))
 		assert.notEqual(-1, reason.indexOf("years"))
 	});

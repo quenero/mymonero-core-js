@@ -1,19 +1,19 @@
 {
-  "name": "mymonero-core-js",
+  "name": "myqueenero-core-js",
   "version": "1.1.0",
-  "description": "The JS library containing the Monero crypto plus lightweight wallet functions behind the official MyMonero apps",
+  "description": "The JS library containing the Queenero crypto plus lightweight wallet functions behind the official MyQueenero apps",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mymonero/mymonero-core-js.git"
+    "url": "git+https://github.com/quenero/myqueenero-core-js.git"
   },
   "scripts": {
     "format": "find . -name '*.js*' | xargs prettier --write --config ./.prettierrc --config-precedence file-override",
     "test": "mocha"
   },
   "keywords": [
-    "monero",
-    "mymonero",
+    "queenero",
+    "myqueenero",
     "javascript",
     "js",
     "lightweight",
@@ -27,9 +27,9 @@
   "author": "MyMonero",
   "license": "See LICENSE.TXT. Copyright (c) 2014-2019, MyMonero.com. All rights reserved.",
   "bugs": {
-    "url": "https://github.com/mymonero/mymonero-core-js/issues"
+    "url": "https://github.com/quenero/myqueenero-core-js/issues"
   },
-  "homepage": "https://github.com/mymonero/mymonero-core-js#readme",
+  "homepage": "https://github.com/quenero/myqueenero-core-js#readme",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "6.26.3",
@@ -47,9 +47,9 @@
     "verbose": true,
     "coveragePathIgnorePatterns": [
       "node_modules",
-      "monero_utils/MyMoneroCoreCpp_WASM.js",
-      "monero_utils/MyMoneroCoreCpp_ASMJS.js",
-      "monero_utils/MyMoneroCoreCpp_ASMJS.asm.js",
+      "queenero_utils/MyQueeneroCoreCpp_WASM.js",
+      "queenero_utils/MyQueeneroCoreCpp_ASMJS.js",
+      "queenero_utils/MyQueeneroCoreCpp_ASMJS.asm.js",
       "tests/emjs/*"
     ]
   }

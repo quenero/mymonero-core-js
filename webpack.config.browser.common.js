@@ -37,8 +37,8 @@ module.exports =
 	entry: "./index.js",
 	output: {
 		path: path.resolve(__dirname, "build"),
-		filename: "mymonero-core.js",
-        library: "mymonero_core_js",
+		filename: "myqueenero-core.js",
+        library: "myqueenero_core_js",
         libraryTarget: "umd"
 	},
 	cache: false,
@@ -81,8 +81,8 @@ module.exports =
 						path.join(__dirname, 'node_modules')
 					],
 					exclude: [
-						'monero_utils/MyMoneroCoreCpp_ASMJS.asm.js',
-						'monero_utils/MyMoneroCoreCpp_ASMJS.wasm'
+						'queenero_utils/MyQueeneroCoreCpp_ASMJS.asm.js',
+						'queenero_utils/MyQueeneroCoreCpp_ASMJS.wasm'
 					]
 				},
 				use: [

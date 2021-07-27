@@ -30,19 +30,19 @@ module.exports = function(wallaby) {
 	process.env.NODE_ENV = "development";
 
 	return {
-		name: "mymonero-core-js",
+		name: "myqueenero-core-js",
 		files: [
 			"cryptonote_utils/**/*.js",
 			"hostAPI/**/*.js",
-			"monero_utils/**/*.js",
+			"queenero_utils/**/*.js",
 			"index.js",
 			"tests/borromean/test_parameters.js",
 		],
 
 		filesWithNoCoverageCalculated: [
-			"monero_utils/MyMoneroCoreCpp_WASM.js",
-			"monero_utils/MyMoneroCoreCpp_ASMJS.js",
-			"monero_utils/MyMoneroCoreCpp_ASMJS.asm.js"
+			"queenero_utils/MyQueeneroCoreCpp_WASM.js",
+			"queenero_utils/MyQueeneroCoreCpp_ASMJS.js",
+			"queenero_utils/MyQueeneroCoreCpp_ASMJS.asm.js"
 		],
 
 		tests: ["./tests/**/*spec.js"],

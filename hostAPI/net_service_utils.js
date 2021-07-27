@@ -140,7 +140,7 @@ function _new_HTTPRequestHandlerFunctionCallingFn(fn) {
 				json = JSON.parse(body);
 			} catch (e) {
 				console.error(
-					"❌  HostedMoneroAPIClient Error: Unable to parse json with exception:",
+					"❌  HostedQueeneroAPIClient Error: Unable to parse json with exception:",
 					e,
 					"\nbody:",
 					body,
